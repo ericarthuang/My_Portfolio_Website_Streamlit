@@ -30,7 +30,7 @@ lottie_animation = load_lottieurl("https://assets2.lottiefiles.com/private_files
 img_learning_map = Image.open("./static/Self-Learning_Map.jpg")
 
 # --- Header Section --
-st.title("Copy Learning: Self-Learning in Computer Science")
+st.title("Copy Learning in Computer Science")
 
 with st.container():
     st.subheader("Hi, I am JainWha Huang :penguin:")
@@ -68,6 +68,7 @@ with st.container():
 with st.container():
     st.write("---")
     st.header("My Self-Learning Map")
+    st.markdown("[:earth_asia:Welcome to My Copy Learning Website](https://ericarthuang.github.io/My_Copy_Learning/)")
     image_column, text_column = st.columns((1, 2))
     with image_column:
         st.image(img_learning_map)
@@ -79,7 +80,7 @@ with st.container():
             Share your thinking with my.
             """
         )
-        st.markdown("[:earth_asia:Welcome to My Copy Learning Website](https://ericarthuang.github.io/My_Copy_Learning/)")
+        
 
 
 # --- CONTACT ---

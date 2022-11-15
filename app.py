@@ -55,9 +55,9 @@ with st.container():
             - Machine Learning: Scilit-Learn, TensorFlow, Pytorch, and Computer Vision
             - Data Analysis: Numpy, Pandas, Power BI, and Scraping
             - Data Visulizaion: Matplotlib, Seaborn, and Plotly
-            - Web Fronend - HTML, CSS, JavaScript, and React
-            - Web Backend - Django, Flask, FastAPI, Node, and Express
+            - Web Application - HTML, CSS, JavaScript, React, Django, Flask, FastAPI, Node, and Express
             - Database and Cloud Service:  MySQL, Postgres, and AWS
+            - Github Version Control, GitHub Actions, and Doccker Deployment
             - Gaming: Pygame
             """
         )

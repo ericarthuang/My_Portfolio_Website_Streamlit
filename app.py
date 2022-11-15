@@ -40,8 +40,14 @@ with st.container():
 # --- Main Section ---
 with st.container():
     st.write("---")
-    left_column, right_column = st.columns((3, 2))
+    left_column, right_column = st.columns((2, 3))
     with left_column:
+        st_lottie(
+            lottie_animation, 
+            height=300, 
+            key="learning",
+        )
+    with right_column:
         st.header("What I Learn")
         st.write("""
             - Computer Languages: C, C++, Python;
@@ -56,12 +62,7 @@ with st.container():
             """
         )
 
-        with right_column:
-            st_lottie(
-                lottie_animation, 
-                height=300, 
-                key="learning",
-            )
+    
 
 # --- Memos and PROJECTS ---
 with st.container():

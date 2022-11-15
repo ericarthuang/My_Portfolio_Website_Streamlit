@@ -50,15 +50,15 @@ with st.container():
     with right_column:
         st.header("What I Learn")
         st.write("""
-            - Computer Languages: C, C++, Python;
-            - Data Structure and Algorithm;
-            - Machine Learning and Deep Learning: Scilit-Learn, TensorFlow, Pytorch, and Computer Vision
-            - Data Analysis: Python-Numpy, Python-Pandas, Power BI, and Scraping
-            - Data Analysis Visulizaion: Matplotlib, Seaborn, and Plotly
-            - Web Fronend - HTML, CSS, JavaScript, and React;
-            - Web Backend - Django, Flask, FastAPI, Node, Express, and PHP;
-            - Database and Cloud Service:  MySQL, Postgres, and AWS;
-            - Gaming: Pygame;
+            - Computer Languages: C, C++, Python
+            - Data Structure and Algorithm
+            - Machine Learning: Scilit-Learn, TensorFlow, Pytorch, and Computer Vision
+            - Data Analysis: Numpy, Pandas, Power BI, and Scraping
+            - Data Visulizaion: Matplotlib, Seaborn, and Plotly
+            - Web Fronend - HTML, CSS, JavaScript, and React
+            - Web Backend - Django, Flask, FastAPI, Node, and Express
+            - Database and Cloud Service:  MySQL, Postgres, and AWS
+            - Gaming: Pygame
             """
         )
 

@@ -74,14 +74,9 @@ with st.container():
         st.image(img_learning_map)
     with text_column:
         st.subheader("Starting learning Coumputr Science from 54 years old.")
-        st.write(
-            """
-            Find the Memos and Projects about My Self-learning Map.
-            Share your thinking with my.
-            """
-        )
+        st.write("Find the Memos and Projects about My Self-learning Map.")
+        st.write("Share your Creatiive Thinking")
         
-
 
 # --- CONTACT ---
 with st.container():

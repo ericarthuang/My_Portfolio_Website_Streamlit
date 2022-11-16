@@ -7,7 +7,7 @@ from streamlit_lottie import st_lottie
 
 # --- Website Title ---
 st.set_page_config(
-        page_title="My Protfolio",
+        page_title="Protfolio",
         page_icon=":sunny:",
         layout="wide",
 )
@@ -21,8 +21,6 @@ profile_pic = current_dir / "static" / "family_bythesea.jpg"
 map_pic = current_dir / "static" / "Self-Learning_Map.jpg"
 
 # --- General Settings ---
-PAGE_TITLE = "Portfolio"
-PAGE_ICON = ":wave:"
 NAME = "JainWha Huang"
 DESCRIPTION = """
     I am Passionate about Learning and Sharing.
@@ -58,10 +56,8 @@ def load_lottieurl(url):
 lottie_animation = load_lottieurl("https://assets2.lottiefiles.com/private_files/lf30_rnpgzd17.json")
 
 
-
-
 # --- Header Section ---
-st.title("Copy Learning in Computer Science")
+st.header("Copy Learning in Computer Science")
 
 with st.container():
     right_column, left_column = st.columns((2, 3))
@@ -118,7 +114,6 @@ with st.container():
 with st.container():
     st.write("---")
     st.header("Get in Touch")
-    
     contact_form = """
     <form action="https://formsubmit.co/ericarthuang2021@gmail.com" method="POST">
         <input type="text" name="name" placeholder="Your name" required>

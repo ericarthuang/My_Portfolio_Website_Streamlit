@@ -52,7 +52,7 @@ with st.container():
         
     with right_column:
         st.header("What I Learn")
-        st.markdown("[:earth_asia:Welcome to My Copy Learning Website](https://ericarthuang.github.io/My_Copy_Learning/)")
+        st.markdown("[:earth_asia:Welcome to My Copy Learning Website to find the Memos and Projects](https://ericarthuang.github.io/My_Copy_Learning/)")
         st.write("##")
         st.write("""
             - C, C++, Python, Data Structure and Algorithm

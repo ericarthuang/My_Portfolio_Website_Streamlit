@@ -27,7 +27,7 @@ NAME = "JainWha Huang"
 DESCRIPTION = """
     I am Passionate about Learning and Sharing.
 """
-#EMAIL = "ericarhuang2021@gmail.com"
+EMAIL = "ericarhuang2021@gmail.com"
 SOCAIL_MEDIA = {
     "GitHub": "https://github.com/ericarthuang",
     "YouTube": "https://www.facebook.com/ericarthuang",
@@ -73,7 +73,7 @@ st.title("Copy Learning in Computer Science")
 with st.container():
     right_column, left_column = st.columns((2, 3))
     with right_column:
-        st.image(profile_pic, width=360)
+        st.image(profile_pic, width=420)
     with left_column:
         st.subheader(f"Hi, I am {NAME} :penguin:")
         st.write("I am Passionate about Learning and Sharing.")
@@ -83,7 +83,7 @@ with st.container():
             file_name=resume_file.name,
             mime="application/octet-stream",
         )
-        #st.write(":e-mail:", EMAIL)
+        st.write(":e-mail:", EMAIL)
         st_lottie(
             lottie_animation, 
             height=150, 

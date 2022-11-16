@@ -34,7 +34,7 @@ st.title("Copy Learning in Computer Science")
 
 with st.container():
     st.subheader("Hi, I am JainWha Huang :penguin:")
-    st.write("I am passionate aobut learning and sharing.")
+    st.write("I am Passionate aobut Learning and Sharing.")
     
 
 # --- Main Section ---

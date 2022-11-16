@@ -61,7 +61,7 @@ with st.container():
             - Data Visulization: Matplotlib, Seaborn, and Plotly
             - Web Application: Django, Flask, FastAPI, HTML, CSS, JavaScript, React, Node, and Express
             - Database and Cloud: MySQL, Postgres, and AWS
-            - Github Version Control, GitHub Actions, and Doccker Deployment
+            - CICD: Github Version Control, GitHub Actions, and Doccker Deployment
             - Gaming: Pygame
             - Computer Architecture, Computer Organiztion, Networking, CyberSecurity, and Opeation System
             """

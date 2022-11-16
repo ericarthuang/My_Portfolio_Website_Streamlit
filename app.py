@@ -18,7 +18,7 @@ current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "static" / "style.css"
 resume_file = current_dir / "static" / "resume.pdf"
 profile_pic = current_dir / "static" / "family_bythesea.jpg"
-
+map_pic = current_dir / "static" / "Self-Learning_Map.jpg"
 
 # --- General Settings ---
 PAGE_TITLE = "Portfolio"
@@ -27,7 +27,7 @@ NAME = "JainWha Huang"
 DESCRIPTION = """
     I am Passionate about Learning and Sharing.
 """
-EMAIL = "ericarhuang2021@gmail.com"
+EMAIL = "ericarthuang2021@gmail.com"
 SOCAIL_MEDIA = {
     "GitHub": "https://github.com/ericarthuang",
     "YouTube": "https://www.facebook.com/ericarthuang",
@@ -35,13 +35,6 @@ SOCAIL_MEDIA = {
     "FB": "https://www.facebook.com/ericarthuang",
     "Twitter": "https://twitter.com/hungjinhu19",
 }
-
-
-# --- Use Local CSS ---
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-local_css(css_file)
 
 
 # --- Load CSS, PDF, Profile Picture, Animation Assets ---
@@ -53,18 +46,18 @@ with open(css_file) as f:
 
 with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
-
 profile_pic = Image.open(profile_pic)
+
+img_learning_map = Image.open(map_pic)
 
 def load_lottieurl(url):
     r = requests.get(url)
     if r.status_code != 200:
         return None
     return r.json()
-
 lottie_animation = load_lottieurl("https://assets2.lottiefiles.com/private_files/lf30_rnpgzd17.json")
 
-img_learning_map = Image.open("./static/Self-Learning_Map.jpg")
+
 
 
 # --- Header Section ---
@@ -101,7 +94,7 @@ for index, (platform, link) in enumerate(SOCAIL_MEDIA.items()):
 with st.container():
     st.write("---")
     st.header("What I Learn")
-    st.markdown("[:earth_asia:Welcome to My Copy Learning Website to find the Memos and Projects](https://ericarthuang.github.io/My_Copy_Learning/)")
+    st.markdown("[:earth_asia:Welcome to My Copy Learning Website to Find the Memos and Projects](https://ericarthuang.github.io/My_Copy_Learning/)")
     
     left_column, right_column = st.columns((1, 2))
     with left_column:

@@ -71,9 +71,9 @@ img_learning_map = Image.open("./static/Self-Learning_Map.jpg")
 st.title("Copy Learning in Computer Science")
 
 with st.container():
-    right_column, left_column = st.columns((1, 2))
+    right_column, left_column = st.columns((2, 3))
     with right_column:
-        st.image(profile_pic, width =330)
+        st.image(profile_pic, width=360)
     with left_column:
         st.subheader(f"Hi, I am {NAME} :penguin:")
         st.write("I am Passionate about Learning and Sharing.")
@@ -84,10 +84,14 @@ with st.container():
             mime="application/octet-stream",
         )
         #st.write(":e-mail:", EMAIL)
+        st_lottie(
+            lottie_animation, 
+            height=150, 
+            key="learning",
+        )
 
 
 # --- Social Link ---
-st.write("#")
 cols = st.columns(len(SOCAIL_MEDIA))
 for index, (platform, link) in enumerate(SOCAIL_MEDIA.items()):
     cols[index].write(f"[{platform}]({link})")
@@ -96,20 +100,13 @@ for index, (platform, link) in enumerate(SOCAIL_MEDIA.items()):
 # --- Main Section ---
 with st.container():
     st.write("---")
+    st.header("What I Learn")
+    st.markdown("[:earth_asia:Welcome to My Copy Learning Website to find the Memos and Projects](https://ericarthuang.github.io/My_Copy_Learning/)")
+    
     left_column, right_column = st.columns((1, 2))
-
     with left_column:
-        st_lottie(
-            lottie_animation, 
-            height=150, 
-            key="learning",
-        )
-        st.image(img_learning_map)
-        
+        st.image(img_learning_map, width =400)
     with right_column:
-        st.header("What I Learn")
-        st.markdown("[:earth_asia:Welcome to My Copy Learning Website to find the Memos and Projects](https://ericarthuang.github.io/My_Copy_Learning/)")
-        st.write("##")
         st.write("""
             - C, C++, Python, Data Structure and Algorithm
             - Machine Learning: Scilit-Learn, TensorFlow, Pytorch, and Computer Vision

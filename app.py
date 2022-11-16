@@ -57,7 +57,7 @@ with st.container():
         st.write("""
             - C, C++, Python, Data Structure and Algorithm
             - Machine Learning: Scilit-Learn, TensorFlow, Pytorch, and Computer Vision
-            - Data Analysis: Numpy, Pandas, Power BI, and Scraping
+            - Data Analysis: Numpy, Pandas, Scraping, and Power BI 
             - Data Visulization: Matplotlib, Seaborn, and Plotly
             - Web Application: Django, Flask, FastAPI, HTML, CSS, JavaScript, React, Node, and Express
             - Database and Cloud: MySQL, Postgres, and AWS

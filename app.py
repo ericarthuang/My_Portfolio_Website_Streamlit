@@ -7,7 +7,7 @@ from streamlit_lottie import st_lottie
 
 # --- Website Title ---
 st.set_page_config(
-        page_title="Protfolio",
+        page_title="Portfolio",
         page_icon=":sunny:",
         layout="wide",
 )

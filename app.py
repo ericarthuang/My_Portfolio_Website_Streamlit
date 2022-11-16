@@ -40,42 +40,33 @@ with st.container():
 # --- Main Section ---
 with st.container():
     st.write("---")
-    left_column, right_column = st.columns((2, 3))
+    left_column, right_column = st.columns((1, 2))
+
     with left_column:
         st_lottie(
             lottie_animation, 
-            height=300, 
+            height=150, 
             key="learning",
         )
+        st.image(img_learning_map)
+        
     with right_column:
         st.header("What I Learn")
+        st.markdown("[:earth_asia:Welcome to My Copy Learning Website](https://ericarthuang.github.io/My_Copy_Learning/)")
+        st.write("##")
         st.write("""
-            - Computer Languages: C, C++, Python
-            - Data Structure and Algorithm
+            - C, C++, Python, Data Structure and Algorithm
             - Machine Learning: Scilit-Learn, TensorFlow, Pytorch, and Computer Vision
             - Data Analysis: Numpy, Pandas, Power BI, and Scraping
-            - Data Visulizaion: Matplotlib, Seaborn, and Plotly
-            - Web Application - HTML, CSS, JavaScript, React, Django, Flask, FastAPI, Node, and Express, MySQL, Postgres, and AWS
+            - Data Visulization: Matplotlib, Seaborn, and Plotly
+            - Web Application: Django, Flask, FastAPI, HTML, CSS, JavaScript, React, Node, and Express
+            - Database and Cloud Service: MySQL, Postgres, and AWS
             - Github Version Control, GitHub Actions, and Doccker Deployment
             - Gaming: Pygame
+            - Computer Architecture, Computer Organiztion, Networking, CyberSecurity, and Opeation System
             """
-        )
+        ) 
 
-    
-
-# --- Memos and PROJECTS ---
-with st.container():
-    st.write("---")
-    st.header("My Self-Learning Map")
-    st.markdown("[:earth_asia:Welcome to My Copy Learning Website](https://ericarthuang.github.io/My_Copy_Learning/)")
-    image_column, text_column = st.columns((1, 2))
-    with image_column:
-        st.image(img_learning_map)
-    with text_column:
-        st.subheader("Starting Learning Coumputr Science from 54 Years Old.")
-        st.write("Find Memos and Projects about My Self-learning Map.")
-        st.write("Share Your Creatiive Thinking")
-        
 
 # --- CONTACT ---
 with st.container():

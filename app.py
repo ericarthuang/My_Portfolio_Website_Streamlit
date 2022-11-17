@@ -115,7 +115,7 @@ with st.container():
     st.write("---")
     st.header("Get in Touch")
     contact_form = """
-    <form action="https://formsubmit.co/{EMAIL}" method="POST">
+    <form action=f"https://formsubmit.co/{EMAIL}" method="POST">
         <input type="text" name="name" placeholder="Your name" required>
         <input type="email" name="email" placeholder="Your email" required>
         <textarea name="message" placeholder="Your Massages..."></textarea>

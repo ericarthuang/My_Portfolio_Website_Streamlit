@@ -28,7 +28,7 @@ DESCRIPTION = """
 EMAIL = "ericarthuang2021@gmail.com"
 SOCAIL_MEDIA = {
     "GitHub": "https://github.com/ericarthuang",
-    "YouTube": "https://www.facebook.com/ericarthuang",
+    "YouTube": "https://www.youtube.com/channel/UCltDQZjoB00ORfutJ0j6a_Q",
     "Linkedin": "https://www.linkedin.com/in/%E5%BB%BA%E6%A8%BA-%E9%BB%83-57a3b4257/",
     "FB": "https://www.facebook.com/ericarthuang",
     "Twitter": "https://twitter.com/hungjinhu19",
@@ -115,7 +115,7 @@ with st.container():
     st.write("---")
     st.header("Get in Touch")
     contact_form = """
-    <form action="https://formsubmit.co/ericarthuang2021@gmail.com" method="POST">
+    <form action="https://formsubmit.co/{EMAIL}}" method="POST">
         <input type="text" name="name" placeholder="Your name" required>
         <input type="email" name="email" placeholder="Your email" required>
         <textarea name="message" placeholder="Your Massages..."></textarea>

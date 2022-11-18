@@ -16,7 +16,7 @@ st.set_page_config(
 # --- Path Settings ---
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "static" / "style.css"
-resume_file = current_dir / "static" / "resume.pdf"
+autobiography_file = current_dir / "static" / "autobiography.pdf"
 profile_pic = current_dir / "static" / "family_bythesea.jpg"
 map_pic = current_dir / "static" / "Self-Learning_Map.jpg"
 
@@ -42,7 +42,7 @@ with open(css_file) as f:
         unsafe_allow_html=True,
     )
 
-with open(resume_file, "rb") as pdf_file:
+with open(autobiography_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 profile_pic = Image.open(profile_pic)
 
@@ -67,9 +67,9 @@ with st.container():
         st.subheader(f"Hi, I am {NAME} :penguin:")
         st.write("I am Passionate about Learning and Sharing.")
         st.download_button(
-            label="Download Resume",
+            label="Download Autobiography",
             data=PDFbyte,
-            file_name=resume_file.name,
+            file_name=autobiography_file.name,
             mime="application/octet-stream",
         )
         st.write(":e-mail:", EMAIL)
@@ -92,9 +92,9 @@ with st.container():
     st.header("What I Learn")
     st.markdown("[:earth_asia:Welcome to My Copy Learning Website to Find the Memos and Projects](https://ericarthuang.github.io/My_Copy_Learning/)")
     
-    left_column, right_column = st.columns((1, 2))
+    left_column, right_column = st.columns((2, 3))
     with left_column:
-        st.image(img_learning_map, width =400)
+        st.image(img_learning_map, width=400)
     with right_column:
         st.write("""
             - C, C++, Python, Data Structure and Algorithm
@@ -105,7 +105,7 @@ with st.container():
             - Database and Cloud: MySQL, Postgres, and AWS
             - CI/CD: Github Version Control, GitHub Actions, and Doccker Deployment
             - Gaming: Pygame
-            - Computer Architecture, Computer Organiztion, Networking, CyberSecurity, and Opeation System
+            - COA, Networking, CyberSecurity, and Opeation System
             """
         ) 
 

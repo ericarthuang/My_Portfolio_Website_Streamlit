@@ -16,7 +16,7 @@ st.set_page_config(
 # --- Path Settings ---
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "static" / "style.css"
-autobiography_file = current_dir / "static" / "autobiography.pdf"
+autobiography_file = current_dir / "static" / "Autobiography_JainWha.pdf"
 profile_pic = current_dir / "static" / "family_bythesea.jpg"
 map_pic = current_dir / "static" / "Self-Learning_Map.jpg"
 

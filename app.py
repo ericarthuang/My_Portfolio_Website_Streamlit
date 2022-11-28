@@ -29,9 +29,9 @@ EMAIL = "ericarthuang2021@gmail.com"
 SOCAIL_MEDIA = {
     "GitHub": "https://github.com/ericarthuang",
     "YouTube": "https://www.youtube.com/channel/UCltDQZjoB00ORfutJ0j6a_Q",
-    "Linkedin": "https://www.linkedin.com/in/%E5%BB%BA%E6%A8%BA-%E9%BB%83-57a3b4257/",
+    #"Linkedin": "https://www.linkedin.com/in/%E5%BB%BA%E6%A8%BA-%E9%BB%83-57a3b4257/",
     "FB": "https://www.facebook.com/ericarthuang",
-    "Twitter": "https://twitter.com/hungjinhu19",
+    #"Twitter": "https://twitter.com/hungjinhu19",
 }
 
 

@@ -16,7 +16,7 @@ st.set_page_config(
 # --- Path Settings ---
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "static" / "style.css"
-autobiography_file = current_dir / "static" / "Autobiography_JainWha.pdf"
+autobiography_file = current_dir / "static" / "Autobiography_Resume_JainWha.pdf"
 profile_pic = current_dir / "static" / "family_bythesea.jpg"
 map_pic = current_dir / "static" / "Self-Learning_Map.jpg"
 
@@ -67,7 +67,7 @@ with st.container():
         st.subheader(f"Hi, I am {NAME} :penguin:")
         st.write("I am Passionate about Learning and Sharing.")
         st.download_button(
-            label="Download Autobiography",
+            label="Download Autobiography and Resume",
             data=PDFbyte,
             file_name=autobiography_file.name,
             mime="application/octet-stream",

@@ -28,10 +28,7 @@ DESCRIPTION = """
 EMAIL = "ericarthuang2021@gmail.com"
 SOCAIL_MEDIA = {
     "GitHub": "https://github.com/ericarthuang",
-    "YouTube": "https://www.youtube.com/channel/UCltDQZjoB00ORfutJ0j6a_Q",
-    #"Linkedin": "https://www.linkedin.com/in/%E5%BB%BA%E6%A8%BA-%E9%BB%83-57a3b4257/",
     "FB": "https://www.facebook.com/ericarthuang",
-    #"Twitter": "https://twitter.com/hungjinhu19",
 }
 
 
@@ -60,30 +57,28 @@ lottie_animation = load_lottieurl("https://assets2.lottiefiles.com/private_files
 st.header("Copy Learning in Computer Science")
 
 with st.container():
-    right_column, left_column = st.columns((2, 3))
+    right_column, middle_column, left_column = st.columns((2, 3, 3))
     with right_column:
-        st.image(profile_pic, width=420)
+        st_lottie(
+            lottie_animation, 
+            height=200, 
+            key="learning",
+        )  
+    with middle_column:
+        st.image(profile_pic, width=380)
     with left_column:
         st.subheader(f"Hi, I am {NAME} :penguin:")
         st.write("I am Passionate about Learning and Sharing.")
+        # --- Social Link ---
+        for index, (platform, link) in enumerate(SOCAIL_MEDIA.items()):
+            st.write(f"[{platform}]({link})")
         st.download_button(
-            label="Download Autobiography and Resume",
+            label="Autobiography and Resume",
             data=PDFbyte,
             file_name=autobiography_file.name,
             mime="application/octet-stream",
         )
         st.write(":e-mail:", EMAIL)
-        st_lottie(
-            lottie_animation, 
-            height=150, 
-            key="learning",
-        )
-
-
-# --- Social Link ---
-cols = st.columns(len(SOCAIL_MEDIA))
-for index, (platform, link) in enumerate(SOCAIL_MEDIA.items()):
-    cols[index].write(f"[{platform}]({link})")
 
 
 # --- Main Section ---
@@ -94,7 +89,7 @@ with st.container():
     
     left_column, right_column = st.columns((2, 3))
     with left_column:
-        st.image(img_learning_map, width=400)
+        st.image(img_learning_map, width=420)
     with right_column:
         st.write("""
             - C, C++, Python, Data Structure and Algorithm

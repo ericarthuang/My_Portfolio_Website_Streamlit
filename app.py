@@ -61,7 +61,7 @@ with st.container():
     with right_column:
         st_lottie(
             lottie_animation, 
-            height=200, 
+            height=240, 
             key="learning",
         )  
     with middle_column:

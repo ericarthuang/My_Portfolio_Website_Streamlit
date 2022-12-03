@@ -16,7 +16,7 @@ st.set_page_config(
 # --- Path Settings ---
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "static" / "style.css"
-autobiography_file = current_dir / "static" / "Autobiography_Resume_JainWha.pdf"
+#autobiography_file = current_dir / "static" / "Autobiography_Resume_JainWha.pdf"
 profile_pic = current_dir / "static" / "family_bythesea.jpg"
 map_pic = current_dir / "static" / "Self-Learning_Map.jpg"
 
@@ -39,9 +39,9 @@ with open(css_file) as f:
         unsafe_allow_html=True,
     )
 
-with open(autobiography_file, "rb") as pdf_file:
-    PDFbyte = pdf_file.read()
-profile_pic = Image.open(profile_pic)
+#with open(autobiography_file, "rb") as pdf_file:
+#    PDFbyte = pdf_file.read()
+#profile_pic = Image.open(profile_pic)
 
 img_learning_map = Image.open(map_pic)
 
@@ -72,12 +72,12 @@ with st.container():
         # --- Social Link ---
         for index, (platform, link) in enumerate(SOCAIL_MEDIA.items()):
             st.write(f"[{platform}]({link})")
-        st.download_button(
-            label="Autobiography and Resume",
-            data=PDFbyte,
-            file_name=autobiography_file.name,
-            mime="application/octet-stream",
-        )
+        #st.download_button(
+        #    label="Autobiography and Resume",
+        #    data=PDFbyte,
+        #    file_name=autobiography_file.name,
+        #    mime="application/octet-stream",
+        #)
         st.write(":e-mail:", EMAIL)
 
 

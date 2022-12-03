@@ -58,7 +58,7 @@ lottie_animation = load_lottieurl("https://assets2.lottiefiles.com/private_files
 st.header("Copy Learning in Computer Science")
 
 with st.container():
-    right_column, middle_column, left_column = st.columns((2, 3, 3))
+    right_column, middle_column, left_column = st.columns((1, 1, 1))
     with right_column:
         st_lottie(
             lottie_animation, 
@@ -66,7 +66,7 @@ with st.container():
             key="learning",
         )  
     with middle_column:
-        st.image(profile_pic, width=320)
+        st.image(profile_pic, width=330)
     with left_column:
         st.subheader(f"Hi, I am {NAME} :penguin:")
         st.write("I am Passionate about Learning and Sharing.")

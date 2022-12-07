@@ -16,7 +16,7 @@ st.set_page_config(
 # --- Path Settings ---
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "static" / "style.css"
-#autobiography_file = current_dir / "static" / #"Autobiography_Resume_JainWha.pdf"
+autobiography_file = current_dir / "static" / "Autobiography_Resume_JainWha.pdf"
 profile_pic = current_dir / "static" / "family_bythesea.jpg"
 map_pic = current_dir / "static" / "Self-Learning_Map.jpg"
 
@@ -39,8 +39,8 @@ with open(css_file) as f:
         unsafe_allow_html=True,
     )
 
-#with open(autobiography_file, "rb") as pdf_file:
-#    PDFbyte = pdf_file.read()
+with open(autobiography_file, "rb") as pdf_file:
+    PDFbyte = pdf_file.read()
 
 profile_pic = Image.open(profile_pic)
 
@@ -62,23 +62,23 @@ with st.container():
     with right_column:
         st_lottie(
             lottie_animation, 
-            height=240, 
+            height=300, 
             key="learning",
         )  
     with middle_column:
-        st.image(profile_pic, width=330)
+        st.image(profile_pic, width=380)
     with left_column:
         st.subheader(f"Hi, I am {NAME} :penguin:")
         st.write("I am Passionate about Learning and Sharing.")
+        st.download_button(
+            label="About Jain Wha, Huang",
+            data=PDFbyte,
+            file_name=autobiography_file.name,
+            mime="application/octet-stream",
+        )
         # --- Social Link ---
         for index, (platform, link) in enumerate(SOCAIL_MEDIA.items()):
             st.write(f"[{platform}]({link})")
-        #st.download_button(
-        #    label="Autobiography and Resume",
-        #    data=PDFbyte,
-        #    file_name=autobiography_file.name,
-        #    mime="application/octet-stream",
-        #)
         st.write(":e-mail:", EMAIL)
 
 

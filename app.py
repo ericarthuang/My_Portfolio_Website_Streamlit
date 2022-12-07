@@ -58,7 +58,7 @@ lottie_animation = load_lottieurl("https://assets2.lottiefiles.com/private_files
 st.header("Copy Learning in Computer Science")
 
 with st.container():
-    right_column, middle_column, left_column = st.columns((1, 1, 1))
+    right_column, middle_column, left_column = st.columns((2, 3, 3))
     with right_column:
         st_lottie(
             lottie_animation, 
@@ -90,7 +90,7 @@ with st.container():
     
     left_column, right_column = st.columns((2, 3))
     with left_column:
-        st.image(img_learning_map, width=420)
+        st.image(img_learning_map, width=430)
     with right_column:
         st.write("""
             - C, C++, Python, Data Structure and Algorithm

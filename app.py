@@ -101,7 +101,7 @@ with st.container():
             - Database and Cloud: MySQL, Postgres, and AWS
             - CI/CD: Github Version Control, GitHub Actions, and Doccker Deployment
             - Gaming: Pygame
-            - COA, Networking, CyberSecurity, and Opeation System
+            - COA, Networking, CyberSecurity, and Opeating System
             """
         ) 
 

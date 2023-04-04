@@ -86,7 +86,7 @@ with st.container():
 with st.container():
     st.write("---")
     st.header("What I Learn")
-    st.markdown("[:earth_asia:Welcome to My Copy Learning Website to Find the Memos and Projects](https://ericarthuang.github.io/My_Copy_Learning/)")
+    st.markdown("[:penguin: Welcome to My Copy Learning Website to Find the Memos and Projects](https://ericarthuang.github.io/My_Copy_Learning/)")
     
     left_column, right_column = st.columns((2, 3))
     with left_column:

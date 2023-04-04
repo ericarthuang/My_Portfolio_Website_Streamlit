@@ -41,6 +41,7 @@ with open(css_file) as f:
 
 with open(autobiography_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
+
 profile_pic = Image.open(profile_pic)
 
 img_learning_map = Image.open(map_pic)
@@ -61,7 +62,7 @@ with st.container():
     with right_column:
         st_lottie(
             lottie_animation, 
-            height=240, 
+            height=300, 
             key="learning",
         )  
     with middle_column:
@@ -69,15 +70,15 @@ with st.container():
     with left_column:
         st.subheader(f"Hi, I am {NAME} :penguin:")
         st.write("I am Passionate about Learning and Sharing.")
-        # --- Social Link ---
-        for index, (platform, link) in enumerate(SOCAIL_MEDIA.items()):
-            st.write(f"[{platform}]({link})")
         st.download_button(
-            label="Autobiography and Resume",
+            label="About Jain Wha, Huang",
             data=PDFbyte,
             file_name=autobiography_file.name,
             mime="application/octet-stream",
         )
+        # --- Social Link ---
+        for index, (platform, link) in enumerate(SOCAIL_MEDIA.items()):
+            st.write(f"[{platform}]({link})")
         st.write(":e-mail:", EMAIL)
 
 
@@ -89,7 +90,7 @@ with st.container():
     
     left_column, right_column = st.columns((2, 3))
     with left_column:
-        st.image(img_learning_map, width=420)
+        st.image(img_learning_map, width=430)
     with right_column:
         st.write("""
             - C, C++, Python, Data Structure and Algorithm
@@ -100,7 +101,7 @@ with st.container():
             - Database and Cloud: MySQL, Postgres, and AWS
             - CI/CD: Github Version Control, GitHub Actions, and Doccker Deployment
             - Gaming: Pygame
-            - COA, Networking, CyberSecurity, and Opeation System
+            - COA, Networking, CyberSecurity, and Operating System
             """
         ) 
 
